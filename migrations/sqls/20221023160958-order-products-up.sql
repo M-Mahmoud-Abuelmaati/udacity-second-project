@@ -1,0 +1,1 @@
+CREATE TABLE order_products (id SERIAL PRIMARY KEY, order_id bigint REFERENCES orders(id) ON DELETE SET NULL, product_id bigint REFERENCES products(id) ON DELETE SET NULL, quantity Integer);

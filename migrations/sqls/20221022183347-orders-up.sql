@@ -1,0 +1,1 @@
+CREATE TABLE orders (id SERIAL PRIMARY KEY, user_id bigint REFERENCES users(id) ON DELETE SET NULL, status VARCHAR(50));
